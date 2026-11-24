@@ -1,0 +1,6 @@
+# Ferramentas de qualidade e segurança usadas no pipeline (e localmente)
+pytest>=8,<9
+pytest-cov>=5,<7
+ruff>=0.7,<1
+bandit[toml]>=1.7.10,<2
+pip-audit>=2.7,<3

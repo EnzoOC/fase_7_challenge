@@ -1,0 +1,14 @@
+case_id,processo,activity,timestamp,resource,atributos,ordem
+SAN-1-R2-batata,sanidade,Ciclo de regras avaliado,2026-11-24 22:02:58.750000+00:00,motor,"{""amostras"": 8}",0
+SAN-1-R2-batata,sanidade,Alerta de sanidade gerado,2026-11-24 22:02:58.759000+00:00,motor,"{""regra"": ""R2"", ""severidade"": ""ALTA""}",1
+SAN-1-R2-batata,sanidade,Envio iniciado,2026-11-24 22:02:59.283000+00:00,gateway-email,{},2
+SAN-1-R2-batata,sanidade,Notificação enviada,2026-11-24 22:03:00.853000+00:00,gateway-email,"{""tentativas"": 1}",3
+SAN-111-R1-zona-leste,sanidade,Ciclo de regras avaliado,2026-11-24 22:13:58.889000+00:00,motor,"{""amostras"": 500}",4
+SAN-111-R1-zona-leste,sanidade,Alerta de sanidade gerado,2026-11-24 22:13:58.908000+00:00,motor,"{""regra"": ""R1"", ""severidade"": ""ALTA""}",5
+SAN-111-R1-zona-leste,sanidade,Envio iniciado,2026-11-24 22:13:59.423000+00:00,gateway-email,{},6
+SAN-111-R1-zona-leste,sanidade,Notificação enviada,2026-11-24 22:14:01.704000+00:00,gateway-email,"{""tentativas"": 1}",7
+SAN-113-R1-zona-leste,sanidade,Ciclo de regras avaliado,2026-11-24 22:14:10.903000+00:00,motor,"{""amostras"": 500}",8
+SAN-113-R1-zona-leste,sanidade,Alerta de sanidade gerado,2026-11-24 22:14:10.923000+00:00,motor,"{""regra"": ""R1"", ""severidade"": ""ALTA""}",9
+SAN-113-R1-zona-leste,sanidade,Envio iniciado,2026-11-24 22:14:10.972000+00:00,gateway-email,{},10
+SAN-113-R1-zona-leste,sanidade,Notificação enviada,2026-11-24 22:14:12.173000+00:00,gateway-email,"{""tentativas"": 1}",11
+SA

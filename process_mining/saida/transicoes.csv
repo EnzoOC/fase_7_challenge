@@ -1,0 +1,14 @@
+activity,proxima,ocorrencias,media_s,mediana_s,p95_s,max_s,tempo_total_s
+Leitura coletada,Leitura recebida no broker,1317,3.097379650721336,0.001,27.022,51.056,4079.2489999999993
+Envio iniciado,Notificação enviada,38,1.3329736842105262,0.8425,4.623049999999999,5.811,50.653
+Leitura recebida no broker,Leitura validada,1279,0.03848788115715403,0.03,0.13119999999999982,0.249,49.226
+Alerta preventivo gerado,Envio iniciado,33,1.0932727272727274,0.512,5.425599999999998,7.554,36.078
+Alerta crítico gerado,Envio iniciado,6,0.7643333333333334,0.5155000000000001,1.391,1.516,4.586
+Falha no envio,Notificação enviada,1,3.757,3.757,3.757,3.757,3.757
+Leitura recebida no broker,Leitura rejeitada,38,0.03481578947368421,0.027,0.10974999999999996,0.191,1.323
+Leitura validada,Índice de estresse calculado,1279,0.001,0.001,0.001,0.001,1.2790000000000001
+Envio iniciado,Falha no envio,1,1.058,1.058,1.058,1.058,1.058
+Índice de estresse calculado,Sem intervenção (solo ideal),741,0.001,0.001,0.001,0.001,0.741
+Índice de estresse calculado,Alerta suprimido (cooldown),499,0.001,0.001,0.001,0.001,0.499
+Índice de estresse calculado,Alerta preventivo gerado,33,0.001,0.001,0.001,0.001,0.033
+Índice de estresse calculado,Alerta crítico gerado,6,0.001,0.001,0.001,0.001,0.006

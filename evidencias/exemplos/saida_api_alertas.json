@@ -1,0 +1,405 @@
+{
+    "gerado_em": "2026-11-24T21:59:12.056717+00:00",
+    "fonte_csv": "stream:imagens-classificadas",
+    "total_amostras": 500,
+    "acuracia_modelo": 92.4,
+    "confianca_media": 83.61,
+    "total_alertas": 26,
+    "por_severidade": {
+        "ALTA": 16,
+        "INFO": 0,
+        "BAIXA": 0,
+        "MEDIA": 9,
+        "CRITICA": 1
+    },
+    "alertas": [
+        {
+            "regra_id": "R7",
+            "regra_nome": "Estresse h\u00eddrico no talh\u00e3o",
+            "severidade": "CRITICA",
+            "escopo": "talhao",
+            "alvo": "T01 \u00b7 Zona Norte (TINKER-TALHAO-01)",
+            "mensagem": "\u00cdndice de estresse h\u00eddrico extremamente alto (60.69)",
+            "recomendacao": "Iniciar irriga\u00e7\u00e3o imediatamente e suspender aplica\u00e7\u00e3o foliar devido \u00e0 alta evapora\u00e7\u00e3o.",
+            "dados_suporte": {
+                "cultura": "Milho",
+                "device_id": "TINKER-TALHAO-01",
+                "leitura_id": "TINKER-TALHAO-01-11242155-00054",
+                "temperatura_c": 29.66,
+                "indice_estresse": 60.69,
+                "umidade_solo_pct": 33.8
+            }
+        },
+        {
+            "regra_id": "R7",
+            "regra_nome": "Estresse h\u00eddrico no talh\u00e3o",
+            "severidade": "MEDIA",
+            "escopo": "talhao",
+            "alvo": "T02 \u00b7 Zona Sul (TINKER-TALHAO-02)",
+            "mensagem": "\u00cdndice de estresse em eleva\u00e7\u00e3o (40.27); condi\u00e7\u00e3o favor\u00e1vel \u00e0 prolifera\u00e7\u00e3o de fungos (ex.: ferrugem asi\u00e1tica)",
+            "recomendacao": "Priorizar inspe\u00e7\u00e3o visual neste talh\u00e3o nas pr\u00f3ximas 24 horas.",
+            "dados_suporte": {
+                "cultura": "Tomate",
+                "device_id": "TINKER-TALHAO-02",
+                "leitura_id": "TINKER-TALHAO-02-11242155-00037",
+                "temperatura_c": 26.45,
+                "indice_estresse": 40.27,
+                "umidade_solo_pct": 49.4
+            }
+        },
+        {
+            "regra_id": "R7",
+            "regra_nome": "Estresse h\u00eddrico no talh\u00e3o",
+            "severidade": "MEDIA",
+            "escopo": "talhao",
+            "alvo": "T03 \u00b7 Zona Leste (TINKER-TALHAO-03)",
+            "mensagem": "\u00cdndice de estresse em eleva\u00e7\u00e3o (40.1); condi\u00e7\u00e3o favor\u00e1vel \u00e0 prolifera\u00e7\u00e3o de fungos (ex.: ferrugem asi\u00e1tica)",
+            "recomendacao": "Priorizar inspe\u00e7\u00e3o visual neste talh\u00e3o nas pr\u00f3ximas 24 horas.",
+            "dados_suporte": {
+                "cultura": "Batata",
+                "device_id": "TINKER-TALHAO-03",
+                "leitura_id": "TINKER-TALHAO-03-11242155-00038",
+                "temperatura_c": 29.4,
+                "indice_estresse": 40.1,
+                "umidade_solo_pct": 54.0
+            }
+        },
+        {
+            "regra_id": "R7",
+            "regra_nome": "Estresse h\u00eddrico no talh\u00e3o",
+            "severidade": "MEDIA",
+            "escopo": "talhao",
+            "alvo": "T04 \u00b7 Zona Oeste (TINKER-TALHAO-04)",
+            "mensagem": "\u00cdndice de estresse em eleva\u00e7\u00e3o (40.89); condi\u00e7\u00e3o favor\u00e1vel \u00e0 prolifera\u00e7\u00e3o de fungos (ex.: ferrugem asi\u00e1tica)",
+            "recomendacao": "Priorizar inspe\u00e7\u00e3o visual neste talh\u00e3o nas pr\u00f3ximas 24 horas.",
+            "dados_suporte": {
+                "cultura": "Uva",
+                "device_id": "TINKER-TALHAO-04",
+                "leitura_id": "TINKER-TALHAO-04-11242155-00065",
+                "temperatura_c": 30.86,
+                "indice_estresse": 40.89,
+                "umidade_solo_pct": 55.4
+            }
+        },
+        {
+            "regra_id": "R7",
+            "regra_nome": "Estresse h\u00eddrico no talh\u00e3o",
+            "severidade": "MEDIA",
+            "escopo": "talhao",
+            "alvo": "T05 \u00b7 Centro (TINKER-TALHAO-05)",
+            "mensagem": "\u00cdndice de estresse em eleva\u00e7\u00e3o (40.8); condi\u00e7\u00e3o favor\u00e1vel \u00e0 prolifera\u00e7\u00e3o de fungos (ex.: ferrugem asi\u00e1tica)",
+            "recomendacao": "Priorizar inspe\u00e7\u00e3o visual neste talh\u00e3o nas pr\u00f3ximas 24 horas.",
+            "dados_suporte": {
+                "cultura": "Milho",
+                "device_id": "TINKER-TALHAO-05",
+                "leitura_id": "TINKER-TALHAO-05-11242155-00040",
+                "temperatura_c": 28.6,
+                "indice_estresse": 40.8,
+                "umidade_solo_pct": 52.1
+            }
+        },
+        {
+            "regra_id": "R1",
+            "regra_nome": "Infesta\u00e7\u00e3o regional",
+            "severidade": "ALTA",
+            "escopo": "regiao",
+            "alvo": "Zona Norte",
+            "mensagem": "36.8% das 87 amostras de Zona Norte apresentam doen\u00e7a",
+            "recomendacao": "Acionar plano de conten\u00e7\u00e3o: isolar lotes afetados, aplicar fungicida/bactericida espec\u00edfico e revisar irriga\u00e7\u00e3o.",
+            "dados_suporte": {
+                "doentes": 32,
+                "saudaveis": 55,
+                "pct_doente": 36.78,
+                "total_amostras": 87
+            }
+        },
+        {
+            "regra_id": "R1",
+            "regra_nome": "Infesta\u00e7\u00e3o regional",
+            "severidade": "ALTA",
+            "escopo": "regiao",
+            "alvo": "Zona Sul",
+            "mensagem": "32.6% das 89 amostras de Zona Sul apresentam doen\u00e7a",
+            "recomendacao": "Acionar plano de conten\u00e7\u00e3o: isolar lotes afetados, aplicar fungicida/bactericida espec\u00edfico e revisar irriga\u00e7\u00e3o.",
+            "dados_suporte": {
+                "doentes": 29,
+                "saudaveis": 60,
+                "pct_doente": 32.58,
+                "total_amostras": 89
+            }
+        },
+        {
+            "regra_id": "R1",
+            "regra_nome": "Infesta\u00e7\u00e3o regional",
+            "severidade": "ALTA",
+            "escopo": "regiao",
+            "alvo": "Zona Leste",
+            "mensagem": "46.1% das 115 amostras de Zona Leste apresentam doen\u00e7a",
+            "recomendacao": "Acionar plano de conten\u00e7\u00e3o: isolar lotes afetados, aplicar fungicida/bactericida espec\u00edfico e revisar irriga\u00e7\u00e3o.",
+            "dados_suporte": {
+                "doentes": 53,
+                "saudaveis": 62,
+                "pct_doente": 46.09,
+                "total_amostras": 115
+            }
+        },
+        {
+            "regra_id": "R1",
+            "regra_nome": "Infesta\u00e7\u00e3o regional",
+            "severidade": "ALTA",
+            "escopo": "regiao",
+            "alvo": "Zona Oeste",
+            "mensagem": "45.0% das 100 amostras de Zona Oeste apresentam doen\u00e7a",
+            "recomendacao": "Acionar plano de conten\u00e7\u00e3o: isolar lotes afetados, aplicar fungicida/bactericida espec\u00edfico e revisar irriga\u00e7\u00e3o.",
+            "dados_suporte": {
+                "doentes": 45,
+                "saudaveis": 55,
+                "pct_doente": 45.0,
+                "total_amostras": 100
+            }
+        },
+        {
+            "regra_id": "R1",
+            "regra_nome": "Infesta\u00e7\u00e3o regional",
+            "severidade": "ALTA",
+            "escopo": "regiao",
+            "alvo": "Centro",
+            "mensagem": "49.5% das 109 amostras de Centro apresentam doen\u00e7a",
+            "recomendacao": "Acionar plano de conten\u00e7\u00e3o: isolar lotes afetados, aplicar fungicida/bactericida espec\u00edfico e revisar irriga\u00e7\u00e3o.",
+            "dados_suporte": {
+                "doentes": 54,
+                "saudaveis": 55,
+                "pct_doente": 49.54,
+                "total_amostras": 109
+            }
+        },
+        {
+            "regra_id": "R2",
+            "regra_nome": "Cultura em risco",
+            "severidade": "MEDIA",
+            "escopo": "cultura",
+            "alvo": "Milho",
+            "mensagem": "Cultura Milho: Ferrugem Comum representa 29.5%",
+            "recomendacao": "Tratamento direcionado contra Ferrugem Comum; intensificar inspe\u00e7\u00e3o e considerar rota\u00e7\u00e3o de cultura para o pr\u00f3ximo ciclo.",
+            "dados_suporte": {
+                "pct_doente": 38.64,
+                "pct_dominante": 29.55,
+                "total_amostras": 132,
+                "doenca_dominante": "Ferrugem Comum"
+            }
+        },
+        {
+            "regra_id": "R2",
+            "regra_nome": "Cultura em risco",
+            "severidade": "MEDIA",
+            "escopo": "cultura",
+            "alvo": "Uva",
+            "mensagem": "Cultura Uva: 50.0% de doentes e Podridao Negra representa 50.0%",
+            "recomendacao": "Tratamento direcionado contra Podridao Negra; intensificar inspe\u00e7\u00e3o e considerar rota\u00e7\u00e3o de cultura para o pr\u00f3ximo ciclo.",
+            "dados_suporte": {
+                "pct_doente": 50.0,
+                "pct_dominante": 50.0,
+                "total_amostras": 80,
+                "doenca_dominante": "Podridao Negra"
+            }
+        },
+        {
+            "regra_id": "R2",
+            "regra_nome": "Cultura em risco",
+            "severidade": "MEDIA",
+            "escopo": "cultura",
+            "alvo": "Tomate",
+            "mensagem": "Cultura Tomate: 56.2% de doentes",
+            "recomendacao": "Tratamento direcionado contra Requeima; intensificar inspe\u00e7\u00e3o e considerar rota\u00e7\u00e3o de cultura para o pr\u00f3ximo ciclo.",
+            "dados_suporte": {
+                "pct_doente": 56.25,
+                "pct_dominante": 25.0,
+                "total_amostras": 128,
+                "doenca_dominante": "Requeima"
+            }
+        },
+        {
+            "regra_id": "R2",
+            "regra_nome": "Cultura em risco",
+            "severidade": "ALTA",
+            "escopo": "cultura",
+            "alvo": "Batata",
+            "mensagem": "Cultura Batata: 60.3% de doentes e Requeima representa 60.3%",
+            "recomendacao": "Tratamento direcionado contra Requeima; intensificar inspe\u00e7\u00e3o e considerar rota\u00e7\u00e3o de cultura para o pr\u00f3ximo ciclo.",
+            "dados_suporte": {
+                "pct_doente": 60.29,
+                "pct_dominante": 60.29,
+                "total_amostras": 68,
+                "doenca_dominante": "Requeima"
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Ferrugem Comum / Fev",
+            "mensagem": "17 ocorr\u00eancias de Ferrugem Comum em Fev",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Fev",
+                "doenca": "Ferrugem Comum",
+                "ocorrencias": 17
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Mancha Bacteriana / Fev",
+            "mensagem": "15 ocorr\u00eancias de Mancha Bacteriana em Fev",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Fev",
+                "doenca": "Mancha Bacteriana",
+                "ocorrencias": 15
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Requeima / Fev",
+            "mensagem": "32 ocorr\u00eancias de Requeima em Fev",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Fev",
+                "doenca": "Requeima",
+                "ocorrencias": 32
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Podridao Negra / Fev",
+            "mensagem": "11 ocorr\u00eancias de Podridao Negra em Fev",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Fev",
+                "doenca": "Podridao Negra",
+                "ocorrencias": 11
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Ferrugem Comum / Mar",
+            "mensagem": "16 ocorr\u00eancias de Ferrugem Comum em Mar",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Mar",
+                "doenca": "Ferrugem Comum",
+                "ocorrencias": 16
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Requeima / Mar",
+            "mensagem": "36 ocorr\u00eancias de Requeima em Mar",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Mar",
+                "doenca": "Requeima",
+                "ocorrencias": 36
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Podridao Negra / Mar",
+            "mensagem": "23 ocorr\u00eancias de Podridao Negra em Mar",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Mar",
+                "doenca": "Podridao Negra",
+                "ocorrencias": 23
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Mancha Bacteriana / Mar",
+            "mensagem": "7 ocorr\u00eancias de Mancha Bacteriana em Mar",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Mar",
+                "doenca": "Mancha Bacteriana",
+                "ocorrencias": 7
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Ferrugem Comum / Abr",
+            "mensagem": "6 ocorr\u00eancias de Ferrugem Comum em Abr",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Abr",
+                "doenca": "Ferrugem Comum",
+                "ocorrencias": 6
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "ALTA",
+            "escopo": "mes",
+            "alvo": "Podridao Negra / Abr",
+            "mensagem": "6 ocorr\u00eancias de Podridao Negra em Abr",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Abr",
+                "doenca": "Podridao Negra",
+                "ocorrencias": 6
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "MEDIA",
+            "escopo": "mes",
+            "alvo": "Requeima / Abr",
+            "mensagem": "5 ocorr\u00eancias de Requeima em Abr",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Abr",
+                "doenca": "Requeima",
+                "ocorrencias": 5
+            }
+        },
+        {
+            "regra_id": "R3",
+            "regra_nome": "Doen\u00e7a emergente no m\u00eas",
+            "severidade": "MEDIA",
+            "escopo": "mes",
+            "alvo": "Mancha Bacteriana / Abr",
+            "mensagem": "3 ocorr\u00eancias de Mancha Bacteriana em Abr",
+            "recomendacao": "Investigar fator sazonal (umidade, temperatura). Programar aplica\u00e7\u00e3o preventiva no pr\u00f3ximo m\u00eas equivalente.",
+            "dados_suporte": {
+                "mes": "Abr",
+                "doenca": "Mancha Bacteriana",
+                "ocorrencias": 3
+            }
+        }
+    ]
+}

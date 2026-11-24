@@ -1,0 +1,43 @@
+{"ts": "2026-11-24T22:02:52.824+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "stream de visão iniciado", "saudaveis": 57, "doentes": 43, "intervalo_seg": 2.0}
+{"ts": "2026-11-24T22:03:10.874+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 10, "data_sim": "2026-01-10", "surto": "Zona Norte", "classificacoes": 8}
+{"ts": "2026-11-24T22:03:30.916+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 20, "data_sim": "2026-01-20", "surto": "Zona Sul", "classificacoes": 7}
+{"ts": "2026-11-24T22:03:50.952+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 30, "data_sim": "2026-01-30", "surto": "Zona Sul", "classificacoes": 9}
+{"ts": "2026-11-24T22:04:10.987+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 40, "data_sim": "2026-02-09", "surto": "Zona Leste", "classificacoes": 8}
+{"ts": "2026-11-24T22:04:31.023+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 50, "data_sim": "2026-02-19", "surto": "Zona Leste", "classificacoes": 9}
+{"ts": "2026-11-24T22:04:51.055+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 60, "data_sim": "2026-03-01", "surto": "Zona Oeste", "classificacoes": 6}
+{"ts": "2026-11-24T22:05:11.088+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 70, "data_sim": "2026-03-11", "surto": "Zona Oeste", "classificacoes": 6}
+{"ts": "2026-11-24T22:05:31.121+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 80, "data_sim": "2026-03-21", "surto": "Centro", "classificacoes": 7}
+{"ts": "2026-11-24T22:05:51.153+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 90, "data_sim": "2026-03-31", "surto": "Centro", "classificacoes": 7}
+{"ts": "2026-11-24T22:06:11.184+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 100, "data_sim": "2026-04-10", "surto": "Zona Norte", "classificacoes": 7}
+{"ts": "2026-11-24T22:06:31.214+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 110, "data_sim": "2026-04-20", "surto": "Zona Norte", "classificacoes": 8}
+{"ts": "2026-11-24T22:06:51.243+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 120, "data_sim": "2026-04-30", "surto": "Zona Sul", "classificacoes": 7}
+{"ts": "2026-11-24T22:07:11.274+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 130, "data_sim": "2026-05-10", "surto": "Zona Sul", "classificacoes": 8}
+{"ts": "2026-11-24T22:07:31.308+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 140, "data_sim": "2026-05-20", "surto": "Zona Leste", "classificacoes": 7}
+{"ts": "2026-11-24T22:07:51.338+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 150, "data_sim": "2026-05-30", "surto": "Zona Leste", "classificacoes": 9}
+{"ts": "2026-11-24T22:08:11.368+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 160, "data_sim": "2026-06-09", "surto": "Zona Oeste", "classificacoes": 9}
+{"ts": "2026-11-24T22:08:31.400+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 170, "data_sim": "2026-06-19", "surto": "Zona Oeste", "classificacoes": 9}
+{"ts": "2026-11-24T22:08:51.427+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 180, "data_sim": "2026-06-29", "surto": "Centro", "classificacoes": 6}
+{"ts": "2026-11-24T22:09:11.456+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 190, "data_sim": "2026-07-09", "surto": "Centro", "classificacoes": 7}
+{"ts": "2026-11-24T22:09:31.481+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 200, "data_sim": "2026-07-19", "surto": "Zona Norte", "classificacoes": 9}
+{"ts": "2026-11-24T22:09:51.508+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 210, "data_sim": "2026-07-29", "surto": "Zona Norte", "classificacoes": 6}
+{"ts": "2026-11-24T22:10:11.537+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 220, "data_sim": "2026-08-08", "surto": "Zona Sul", "classificacoes": 6}
+{"ts": "2026-11-24T22:10:31.566+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 230, "data_sim": "2026-08-18", "surto": "Zona Sul", "classificacoes": 9}
+{"ts": "2026-11-24T22:10:51.590+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 240, "data_sim": "2026-08-28", "surto": "Zona Leste", "classificacoes": 6}
+{"ts": "2026-11-24T22:11:11.621+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 250, "data_sim": "2026-09-07", "surto": "Zona Leste", "classificacoes": 7}
+{"ts": "2026-11-24T22:11:31.649+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 260, "data_sim": "2026-09-17", "surto": "Zona Oeste", "classificacoes": 9}
+{"ts": "2026-11-24T22:11:51.677+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 270, "data_sim": "2026-09-27", "surto": "Zona Oeste", "classificacoes": 9}
+{"ts": "2026-11-24T22:12:11.708+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 280, "data_sim": "2026-10-07", "surto": "Centro", "classificacoes": 6}
+{"ts": "2026-11-24T22:12:31.739+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 290, "data_sim": "2026-10-17", "surto": "Centro", "classificacoes": 7}
+{"ts": "2026-11-24T22:12:51.770+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 300, "data_sim": "2026-10-27", "surto": "Zona Norte", "classificacoes": 8}
+{"ts": "2026-11-24T22:13:11.804+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 310, "data_sim": "2026-11-06", "surto": "Zona Norte", "classificacoes": 9}
+{"ts": "2026-11-24T22:13:31.834+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 320, "data_sim": "2026-11-16", "surto": "Zona Sul", "classificacoes": 7}
+{"ts": "2026-11-24T22:13:51.861+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 330, "data_sim": "2026-11-26", "surto": "Zona Sul", "classificacoes": 8}
+{"ts": "2026-11-24T22:14:11.891+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 340, "data_sim": "2026-12-06", "surto": "Zona Leste", "classificacoes": 8}
+{"ts": "2026-11-24T22:14:31.911+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 350, "data_sim": "2026-12-16", "surto": "Zona Leste", "classificacoes": 9}
+{"ts": "2026-11-24T22:14:51.939+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 360, "data_sim": "2026-12-26", "surto": "Zona Oeste", "classificacoes": 7}
+{"ts": "2026-11-24T22:15:11.964+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 370, "data_sim": "2027-01-05", "surto": "Zona Oeste", "classificacoes": 7}
+{"ts": "2026-11-24T22:15:31.994+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 380, "data_sim": "2027-01-15", "surto": "Centro", "classificacoes": 6}
+{"ts": "2026-11-24T22:15:52.019+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 390, "data_sim": "2027-01-25", "surto": "Centro", "classificacoes": 7}
+{"ts": "2026-11-24T22:16:12.042+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 400, "data_sim": "2027-02-04", "surto": "Zona Norte", "classificacoes": 6}
+{"ts": "2026-11-24T22:16:32.066+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 410, "data_sim": "2027-02-14", "surto": "Zona Norte", "classificacoes": 8}
+{"ts": "2026-11-24T22:16:52.099+00:00", "nivel": "INFO", "servico": "ingestao-visao", "msg": "lote publicado", "lote": 420, "data_sim": "2027-02-24", "surto": "Zona Sul", "classificacoes": 9}

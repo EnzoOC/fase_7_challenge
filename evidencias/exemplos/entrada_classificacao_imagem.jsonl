@@ -1,0 +1,2 @@
+{"tipo":"classificacao","ts":"2026-03-15T06:00:00","cultura":"Batata","condicao":"Requeima","label":"Doente","confianca_pct":76.5,"correta":true,"regiao":"Zona Sul","mes":"Mar","nome_arquivo":"Batata_0074_0.jpg"}
+{"tipo":"classificacao","ts":"2026-03-15T06:00:00","cultura":"Milho","condicao":"Saudável","label":"Saudável","confianca_pct":74.65,"correta":true,"regiao":"Centro","mes":"Mar","nome_arquivo":"Milho_0074_1.jpg"}

@@ -1,0 +1,6 @@
+# Exceções revisadas manualmente (cada uma com justificativa).
+#
+# CVE-2025-47273 (setuptools 70.3.0) — FALSO POSITIVO: essa versão não está instalada
+# nas imagens (o setuptools instalado é atualizado no build). Ela aparece apenas no SBOM
+# de build embutido na wheel do confluent-kafka (auditwheel.cdx.json).
+CVE-2025-47273

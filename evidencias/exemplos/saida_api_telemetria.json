@@ -1,0 +1,241 @@
+{
+    "ultimas": [
+        {
+            "id": 846,
+            "leitura_id": "TINKER-TALHAO-01-11242155-00066",
+            "device_id": "TINKER-TALHAO-01",
+            "talhao": "T01",
+            "regiao": "Zona Norte",
+            "cultura": "Milho",
+            "ts_coleta": "2026-11-24T21:59:07.835000+00:00",
+            "ts_processado": "2026-11-24T21:59:07.837000+00:00",
+            "temperatura_c": 28.37,
+            "umidade_solo_pct": 58.3,
+            "luminosidade_pct": 27.2,
+            "indice_estresse": 34.26,
+            "status_solo": "IDEAL",
+            "valida": true,
+            "motivo_rejeicao": null
+        },
+        {
+            "id": 851,
+            "leitura_id": "TINKER-TALHAO-02-11242155-00067",
+            "device_id": "TINKER-TALHAO-02",
+            "talhao": "T02",
+            "regiao": "Zona Sul",
+            "cultura": "Tomate",
+            "ts_coleta": "2026-11-24T21:59:10.837000+00:00",
+            "ts_processado": "2026-11-24T21:59:10.839023+00:00",
+            "temperatura_c": 27.66,
+            "umidade_solo_pct": 59.0,
+            "luminosidade_pct": 26.3,
+            "indice_estresse": 32.49,
+            "status_solo": "IDEAL",
+            "valida": true,
+            "motivo_rejeicao": null
+        },
+        {
+            "id": 852,
+            "leitura_id": "TINKER-TALHAO-03-11242155-00067",
+            "device_id": "TINKER-TALHAO-03",
+            "talhao": "T03",
+            "regiao": "Zona Leste",
+            "cultura": "Batata",
+            "ts_coleta": "2026-11-24T21:59:10.837000+00:00",
+            "ts_processado": "2026-11-24T21:59:10.849327+00:00",
+            "temperatura_c": 30.16,
+            "umidade_solo_pct": 66.7,
+            "luminosidade_pct": 25.8,
+            "indice_estresse": 28.54,
+            "status_solo": "IDEAL",
+            "valida": true,
+            "motivo_rejeicao": null
+        },
+        {
+            "id": 853,
+            "leitura_id": "TINKER-TALHAO-04-11242155-00067",
+            "device_id": "TINKER-TALHAO-04",
+            "talhao": "T04",
+            "regiao": "Zona Oeste",
+            "cultura": "Uva",
+            "ts_coleta": "2026-11-24T21:59:10.837000+00:00",
+            "ts_processado": "2026-11-24T21:59:10.857541+00:00",
+            "temperatura_c": 30.54,
+            "umidade_solo_pct": 53.3,
+            "luminosidade_pct": 23.1,
+            "indice_estresse": 42.51,
+            "status_solo": "ALERTA",
+            "valida": true,
+            "motivo_rejeicao": null
+        },
+        {
+            "id": 854,
+            "leitura_id": "TINKER-TALHAO-05-11242155-00067",
+            "device_id": "TINKER-TALHAO-05",
+            "talhao": "T05",
+            "regiao": "Centro",
+            "cultura": "Milho",
+            "ts_coleta": "2026-11-24T21:59:10.837000+00:00",
+            "ts_processado": "2026-11-24T21:59:10.866529+00:00",
+            "temperatura_c": 29.59,
+            "umidade_solo_pct": 69.6,
+            "luminosidade_pct": 27.8,
+            "indice_estresse": 24.79,
+            "status_solo": "IDEAL",
+            "valida": true,
+            "motivo_rejeicao": null
+        }
+    ],
+    "historico": [
+        {
+            "device_id": "TINKER-TALHAO-01",
+            "talhao": "T01",
+            "ts_coleta": "2026-11-24T21:59:01.831000+00:00",
+            "temperatura_c": 28.54,
+            "umidade_solo_pct": 59.7,
+            "luminosidade_pct": 41.5,
+            "indice_estresse": 33.11,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-04",
+            "talhao": "T04",
+            "ts_coleta": "2026-11-24T21:59:04.834000+00:00",
+            "temperatura_c": 30.86,
+            "umidade_solo_pct": 55.4,
+            "luminosidade_pct": 33.4,
+            "indice_estresse": 40.89,
+            "status_solo": "ALERTA"
+        },
+        {
+            "device_id": "TINKER-TALHAO-03",
+            "talhao": "T03",
+            "ts_coleta": "2026-11-24T21:59:04.834000+00:00",
+            "temperatura_c": 29.45,
+            "umidade_solo_pct": 68.0,
+            "luminosidade_pct": 36.4,
+            "indice_estresse": 26.17,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-05",
+            "talhao": "T05",
+            "ts_coleta": "2026-11-24T21:59:04.834000+00:00",
+            "temperatura_c": 28.88,
+            "umidade_solo_pct": 71.3,
+            "luminosidade_pct": 39.5,
+            "indice_estresse": 22.02,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-01",
+            "talhao": "T01",
+            "ts_coleta": "2026-11-24T21:59:04.834000+00:00",
+            "temperatura_c": 29.12,
+            "umidade_solo_pct": 58.9,
+            "luminosidade_pct": 34.2,
+            "indice_estresse": 34.78,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-02",
+            "talhao": "T02",
+            "ts_coleta": "2026-11-24T21:59:04.834000+00:00",
+            "temperatura_c": 27.26,
+            "umidade_solo_pct": 60.5,
+            "luminosidade_pct": 27.0,
+            "indice_estresse": 30.39,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-03",
+            "talhao": "T03",
+            "ts_coleta": "2026-11-24T21:59:07.835000+00:00",
+            "temperatura_c": 30.6,
+            "umidade_solo_pct": 67.2,
+            "luminosidade_pct": 25.3,
+            "indice_estresse": 28.7,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-02",
+            "talhao": "T02",
+            "ts_coleta": "2026-11-24T21:59:07.835000+00:00",
+            "temperatura_c": 28.6,
+            "umidade_solo_pct": 59.7,
+            "luminosidade_pct": 27.7,
+            "indice_estresse": 33.2,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-01",
+            "talhao": "T01",
+            "ts_coleta": "2026-11-24T21:59:07.835000+00:00",
+            "temperatura_c": 28.37,
+            "umidade_solo_pct": 58.3,
+            "luminosidade_pct": 27.2,
+            "indice_estresse": 34.26,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-04",
+            "talhao": "T04",
+            "ts_coleta": "2026-11-24T21:59:07.835000+00:00",
+            "temperatura_c": 30.76,
+            "umidade_solo_pct": 54.4,
+            "luminosidade_pct": 29.4,
+            "indice_estresse": 41.74,
+            "status_solo": "ALERTA"
+        },
+        {
+            "device_id": "TINKER-TALHAO-05",
+            "talhao": "T05",
+            "ts_coleta": "2026-11-24T21:59:07.835000+00:00",
+            "temperatura_c": 30.18,
+            "umidade_solo_pct": 70.4,
+            "luminosidade_pct": 30.8,
+            "indice_estresse": 24.87,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-03",
+            "talhao": "T03",
+            "ts_coleta": "2026-11-24T21:59:10.837000+00:00",
+            "temperatura_c": 30.16,
+            "umidade_solo_pct": 66.7,
+            "luminosidade_pct": 25.8,
+            "indice_estresse": 28.54,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-05",
+            "talhao": "T05",
+            "ts_coleta": "2026-11-24T21:59:10.837000+00:00",
+            "temperatura_c": 29.59,
+            "umidade_solo_pct": 69.6,
+            "luminosidade_pct": 27.8,
+            "indice_estresse": 24.79,
+            "status_solo": "IDEAL"
+        },
+        {
+            "device_id": "TINKER-TALHAO-04",
+            "talhao": "T04",
+            "ts_coleta": "2026-11-24T21:59:10.837000+00:00",
+            "temperatura_c": 30.54,
+            "umidade_solo_pct": 53.3,
+            "luminosidade_pct": 23.1,
+            "indice_estresse": 42.51,
+            "status_solo": "ALERTA"
+        },
+        {
+            "device_id": "TINKER-TALHAO-02",
+            "talhao": "T02",
+            "ts_coleta": "2026-11-24T21:59:10.837000+00:00",
+            "temperatura_c": 27.66,
+            "umidade_solo_pct": 59.0,
+            "luminosidade_pct": 26.3,
+            "indice_estresse": 32.49,
+            "status_solo": "IDEAL"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+[
+    {
+        "id": 40,
+        "case_id": "TINKER-TALHAO-04-11242155-00065",
+        "regra_id": "R7",
+        "severidade": "MEDIA",
+        "alvo": "T04 \u00b7 Zona Oeste (TINKER-TALHAO-04)",
+        "canal": "app",
+        "tentativas": 1,
+        "enviada_em": "2026-11-24T21:59:05.967670+00:00"
+    },
+    {
+        "id": 39,
+        "case_id": "TINKER-TALHAO-01-11242155-00054",
+        "regra_id": "R7",
+        "severidade": "CRITICA",
+        "alvo": "T01 \u00b7 Zona Norte (TINKER-TALHAO-01)",
+        "canal": "whatsapp",
+        "tentativas": 2,
+        "enviada_em": "2026-11-24T21:58:40.328654+00:00"
+    },
+    {
+        "id": 38,
+        "case_id": "TINKER-TALHAO-04-11242155-00045",
+        "regra_id": "R7",
+        "severidade": "CRITICA",
+        "alvo": "T04 \u00b7 Zona Oeste (TINKER-TALHAO-04)",
+        "canal": "whatsapp",
+        "tentativas": 1,
+        "enviada_em": "2026-11-24T21:58:07.767495+00:00"
+    },
+    {
+        "id": 37,
+        "case_id": "SAN-76-R3-requeima-mar",
+        "regra_id": "R3",
+        "severidade": "ALTA",
+        "alvo": "Requeima / Mar",
+        "canal": "email",
+        "tentativas": 1,
+        "enviada_em": "2026-11-24T21:58:01.947047+00:00"
+    },
+    {
+        "id": 36,
+        "case_id": "TINKER-TALHAO-03-11242155-00038",
+        "regra_id": "R7",
+        "severidade": "MEDIA",
+        "alvo": "T03 \u00b7 Zona Leste (TINKER-TALHAO-03)",
+        "canal": "app",
+        "tentativas": 1,
+        "enviada_em": "2026-11-24T21:58:00.137637+00:00"
+    },
+    {
+        "id": 35,
+        "case_id": "TINKER-TALHAO-04-11242155-00029",
+        "regra_id": "R7",
+        "severidade": "MEDIA",
+        "alvo": "T04 \u00b7 Zona Oeste (TINKER-TALHAO-04)",
+        "canal": "app",
+        "tentativas": 1,
+        "enviada_em": "2026-11-24T21:57:53.798419+00:00"
+    },
+    {
+        "id": 34,
+        "case_id": "TINKER-TALHAO-05-11242155-00040",
+        "regra_id": "R7",
+        "severidade": "MEDIA",
+        "alvo": "T05 \u00b7 Centro (TINKER-TALHAO-05)",
+        "canal": "app",
+        "tentativas": 1,
+        "enviada_em": "2026-11-24T21:57:51.303778+00:00"
+    },
+    {
+        "id": 33,
+        "case_id": "TINKER-TALHAO-02-11242155-00037",
+        "regra_id": "R7",
+        "severidade": "MEDIA",
+        "alvo": "T02 \u00b7 Zona Sul (TINKER-TALHAO-02)",
+        "canal": "app",
+        "tentativas": 1,
+        "enviada_em": "2026-11-24T21:57:42.384525+00:00"
+    },
+    {
+        "id": 32,
+        "case_id": "TINKER-TALHAO-01-11242155-00034",
+        "regra_id": "R7",
+        "severidade": "MEDIA",
+        "alvo": "T01 \u00b7 Zona Norte (TINKER-TALHAO-01)",
+        "canal": "app",
+        "tentativas": 1,
+        "enviada_em": "2026-11-24T21:57:39.264797+00:00"
+    },
+    {
+        "id": 31,
+        "case_id": "SAN-70-R1-zona-oeste",
+        "regra_id": "R1",
+        "severidade": "ALTA",
+        "alvo": "Zona Oeste",
+        "canal": "email",
+        "tentativas": 1,
+        "enviada_em": "2026-11-24T21:57:26.627503+00:00"
+    }
+]

@@ -1,0 +1,23 @@
+# Imagem única para os serviços Python da plataforma AgroSmart.
+# Uso (contexto = raiz do repositório):
+#   docker build -f services/Dockerfile.python --build-arg SERVICO=motor -t agrosmart-motor .
+FROM docker.io/library/python:3.12-slim
+
+ARG SERVICO
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+# Usuário sem privilégios (DevSecOps: nunca rodar como root)
+RUN useradd --create-home --uid 10001 agrosmart
+WORKDIR /app
+
+COPY services/${SERVICO}/requirements.txt ./requirements.txt
+RUN pip install --upgrade pip setuptools && pip install -r requirements.txt
+
+COPY services/comum/ ./
+COPY services/${SERVICO}/ ./
+
+USER agrosmart
+CMD ["python", "main.py"]

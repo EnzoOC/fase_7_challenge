@@ -1,0 +1,40 @@
+{"ts": "2026-11-24T22:02:52.674+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "tópico criado", "topico": "telemetria-iot"}
+{"ts": "2026-11-24T22:02:52.675+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "tópico criado", "topico": "imagens-classificadas"}
+{"ts": "2026-11-24T22:02:52.675+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "tópico criado", "topico": "alertas"}
+{"ts": "2026-11-24T22:02:52.676+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "simulador IoT iniciado", "nos": 5, "intervalo_seg": 3.0}
+{"ts": "2026-11-24T22:03:22.760+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-05"}
+{"ts": "2026-11-24T22:03:37.774+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-02"}
+{"ts": "2026-11-24T22:03:40.778+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-05", "leituras": 7}
+{"ts": "2026-11-24T22:03:43.782+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-05"}
+{"ts": "2026-11-24T22:03:58.797+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-03"}
+{"ts": "2026-11-24T22:04:04.803+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-05", "leituras": 8}
+{"ts": "2026-11-24T22:04:25.824+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-02", "leituras": 17}
+{"ts": "2026-11-24T22:04:37.837+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-03", "leituras": 14}
+{"ts": "2026-11-24T22:06:04.932+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-04"}
+{"ts": "2026-11-24T22:06:28.959+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-01"}
+{"ts": "2026-11-24T22:06:55.988+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-04", "leituras": 18}
+{"ts": "2026-11-24T22:06:58.993+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-01", "leituras": 11}
+{"ts": "2026-11-24T22:07:20.018+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-04"}
+{"ts": "2026-11-24T22:08:02.064+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-04", "leituras": 15}
+{"ts": "2026-11-24T22:08:38.107+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-02"}
+{"ts": "2026-11-24T22:09:02.135+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-02", "leituras": 9}
+{"ts": "2026-11-24T22:09:11.144+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-05"}
+{"ts": "2026-11-24T22:09:23.156+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-03"}
+{"ts": "2026-11-24T22:10:02.200+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-05", "leituras": 18}
+{"ts": "2026-11-24T22:10:11.209+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-04"}
+{"ts": "2026-11-24T22:10:14.212+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-03", "leituras": 18}
+{"ts": "2026-11-24T22:10:38.231+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-04", "leituras": 10}
+{"ts": "2026-11-24T22:10:47.240+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-03"}
+{"ts": "2026-11-24T22:11:02.256+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-03", "leituras": 6}
+{"ts": "2026-11-24T22:12:08.314+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-02"}
+{"ts": "2026-11-24T22:12:20.327+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-03"}
+{"ts": "2026-11-24T22:12:44.347+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-02", "leituras": 13}
+{"ts": "2026-11-24T22:12:47.350+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-03", "leituras": 10}
+{"ts": "2026-11-24T22:13:50.409+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-04"}
+{"ts": "2026-11-24T22:14:38.451+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-05"}
+{"ts": "2026-11-24T22:14:41.455+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-04", "leituras": 18}
+{"ts": "2026-11-24T22:15:17.493+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-05", "leituras": 14}
+{"ts": "2026-11-24T22:16:02.533+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-03"}
+{"ts": "2026-11-24T22:16:44.568+00:00", "nivel": "INFO", "servico": "ingestao-iot", "msg": "nó reconectado — buffer reenviado", "device_id": "TINKER-TALHAO-03", "leituras": 15}
+{"ts": "2026-11-24T22:16:47.591+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-05"}
+{"ts": "2026-11-24T22:16:56.603+00:00", "nivel": "WARNING", "servico": "ingestao-iot", "msg": "nó perdeu conexão — bufferizando", "device_id": "TINKER-TALHAO-03"}

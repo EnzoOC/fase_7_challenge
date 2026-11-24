@@ -1,0 +1,41 @@
+# Regras de alerta OPERACIONAL (saúde da plataforma, não do campo).
+# Visíveis em http://localhost:9090/alerts e no painel do Grafana.
+groups:
+  - name: agrosmart-operacao
+    rules:
+      - alert: ServicoFora
+        expr: up == 0
+        for: 30s
+        labels: { severidade: critica }
+        annotations:
+          resumo: "Serviço {{ $labels.job }} não responde às coletas de métricas"
+
+      - alert: MotorParado
+        expr: time() - agrosmart_motor_ultimo_evento_timestamp_seconds > 60
+        for: 30s
+        labels: { severidade: critica }
+        annotations:
+          resumo: "Motor de decisão sem processar eventos há mais de 1 minuto"
+
+      - alert: TaxaRejeicaoAlta
+        expr: >
+          sum(rate(agrosmart_motor_leituras_total{resultado="rejeitada"}[5m]))
+          / sum(rate(agrosmart_motor_leituras_total[5m])) > 0.10
+        for: 2m
+        labels: { severidade: alta }
+        annotations:
+          resumo: "Mais de 10% das leituras IoT estão sendo rejeitadas (sensor com defeito?)"
+
+      - alert: FilaNotificacaoAlta
+        expr: agrosmart_notificador_fila > 10
+        for: 1m
+        labels: { severidade: alta }
+        annotations:
+          resumo: "Fila de notificações acima de 10 alertas — gateway lento"
+
+      - alert: DispositivoOffline
+        expr: agrosmart_iot_device_offline == 1
+        for: 30s
+        labels: { severidade: media }
+        annotations:
+          resumo: "Nó IoT {{ $labels.device_id }} sem conexão (leituras em buffer)"

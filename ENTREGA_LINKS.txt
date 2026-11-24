@@ -1,0 +1,44 @@
+==============================================================================
+ AgroSmart — FIAP · Fase 7 (entrega final)
+==============================================================================
+
+Equipe:
+  - Nome Completo 1 — RM ______
+  - Nome Completo 2 — RM ______
+  - Nome Completo 3 — RM ______
+  - Nome Completo 4 — RM ______
+  - Nome Completo 5 — RM ______
+
+------------------------------------------------------------------------------
+ LINKS
+------------------------------------------------------------------------------
+
+Repositório GitHub (código + documentação):
+  https://github.com/USUARIO/REPOSITORIO
+
+Pipeline DevSecOps — GitHub Actions (execução de referência, toda verde):
+  https://github.com/USUARIO/REPOSITORIO/actions/runs/NUMERO_DA_EXECUCAO
+
+Vídeo final — demonstração, fluxo e análise de processo (5 a 8 min):
+  https://youtu.be/XXXXXXXXXXX
+
+Vídeo pitch — apresentação do produto (até 5 min):
+  https://youtu.be/XXXXXXXXXXX
+
+Slides do pitch:
+  incluídos no zip em  docs/AgroSmart_Pitch.pdf  (e .pptx)
+
+------------------------------------------------------------------------------
+ ONDE ESTÁ CADA REQUISITO (dentro do zip / repositório)
+------------------------------------------------------------------------------
+
+ 1. Arquitetura final ............ docs/01_arquitetura.md + docs/img/arquitetura.png
+ 2. Execução da plataforma ....... docs/02_execucao.md + evidencias/
+ 3. Pipeline DevSecOps ........... docs/03_devsecops.md + .github/workflows/devsecops.yml
+                                   + docker-compose.yml + services/Dockerfile.python
+ 4. Monitoramento ................ docs/04_monitoramento.md + monitoring/
+ 5. Análise de processo .......... docs/05_analise_processo.md + process_mining/saida/
+                                   (event log, mapas do processo, relatório)
+ 6. Pitch do produto ............. docs/06_produto_pitch.md + slides + vídeo pitch
+
+Como executar:  README.md  (docker compose up -d --build)

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 760" width="1340" height="760" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+<marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs>
+<rect width="1340" height="760" fill="#ffffff"/>
+<text x="40" y="44" font-size="24" font-weight="800" fill="#14532d">AgroSmart — Arquitetura final (Fase 7)</text>
+<text x="40" y="66" font-size="13" fill="#475569">Arquitetura orientada a eventos · tudo em containers (docker compose) · pipeline DevSecOps no GitHub Actions</text>
+<rect x="25" y="85" width="235" height="310" rx="14" fill="#16a34a" fill-opacity="0.06" stroke="#16a34a" stroke-opacity="0.35" stroke-dasharray="6 5"/>
+<text x="37" y="105" font-size="12" font-weight="800" fill="#16a34a" letter-spacing="1.5">ENTRADA</text>
+<rect x="275" y="85" width="205" height="310" rx="14" fill="#475569" fill-opacity="0.06" stroke="#475569" stroke-opacity="0.35" stroke-dasharray="6 5"/>
+<text x="287" y="105" font-size="12" font-weight="800" fill="#475569" letter-spacing="1.5">BARRAMENTO</text>
+<rect x="495" y="85" width="230" height="435" rx="14" fill="#d97706" fill-opacity="0.06" stroke="#d97706" stroke-opacity="0.35" stroke-dasharray="6 5"/>
+<text x="507" y="105" font-size="12" font-weight="800" fill="#d97706" letter-spacing="1.5">PROCESSAMENTO</text>
+<rect x="740" y="85" width="585" height="435" rx="14" fill="#2563eb" fill-opacity="0.06" stroke="#2563eb" stroke-opacity="0.35" stroke-dasharray="6 5"/>
+<text x="752" y="105" font-size="12" font-weight="800" fill="#2563eb" letter-spacing="1.5">SAÍDA</text>
+<rect x="25" y="545" width="1300" height="185" rx="14" fill="#dc2626" fill-opacity="0.06" stroke="#dc2626" stroke-opacity="0.35" stroke-dasharray="6 5"/>
+<text x="37" y="565" font-size="12" font-weight="800" fill="#dc2626" letter-spacing="1.5">OBSERVABILIDADE E ANÁLISE</text>
+<rect x="40" y="115" width="205" height="120" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="142.5" y="141" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">ingestao-iot</text>
+<text x="142.5" y="163" text-anchor="middle" font-size="12" fill="#334155">5 nós IoT (Tinkercad, Fase 6)</text>
+<text x="142.5" y="180" text-anchor="middle" font-size="12" fill="#334155">temperatura · umidade solo · luz</text>
+<text x="142.5" y="197" text-anchor="middle" font-size="12" fill="#334155">falhas e buffer offline</text>
+<rect x="40" y="260" width="205" height="120" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="142.5" y="286" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">ingestao-visao</text>
+<text x="142.5" y="308" text-anchor="middle" font-size="12" fill="#334155">classificador de folhas</text>
+<text x="142.5" y="325" text-anchor="middle" font-size="12" fill="#334155">Random Forest · PlantVillage</text>
+<text x="142.5" y="342" text-anchor="middle" font-size="12" fill="#334155">(Fases 1 e 2)</text>
+<text x="377" y="122" text-anchor="middle" font-size="14" font-weight="800" fill="#1e293b">Apache Kafka</text>
+<rect x="290" y="150" width="175" height="38" rx="19.0" fill="#1e293b"/>
+<text x="377.5" y="174.0" text-anchor="middle" font-size="13" font-weight="700" fill="#f8fafc">telemetria-iot</text>
+<rect x="290" y="300" width="175" height="38" rx="19.0" fill="#1e293b"/>
+<text x="377.5" y="324.0" text-anchor="middle" font-size="13" font-weight="700" fill="#f8fafc">imagens-classificadas</text>
+<rect x="510" y="150" width="200" height="195" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="610.0" y="176" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">motor</text>
+<text x="610.0" y="198" text-anchor="middle" font-size="12" fill="#334155">validação do dado (Fase 5)</text>
+<text x="610.0" y="215" text-anchor="middle" font-size="12" fill="#334155">índice de estresse (Fase 6)</text>
+<text x="610.0" y="232" text-anchor="middle" font-size="12" fill="#334155">R7 tempo real + cooldown</text>
+<text x="610.0" y="249" text-anchor="middle" font-size="12" fill="#334155">R1–R6 em janela (Fase 3)</text>
+<text x="610.0" y="266" text-anchor="middle" font-size="12" fill="#334155">event log de cada passo</text>
+<rect x="755" y="120" width="150" height="38" rx="19.0" fill="#1e293b"/>
+<text x="830.0" y="144.0" text-anchor="middle" font-size="13" font-weight="700" fill="#f8fafc">alertas</text>
+<rect x="935" y="105" width="180" height="110" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="1025.0" y="131" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">notificador</text>
+<text x="1025.0" y="153" text-anchor="middle" font-size="12" fill="#334155">WhatsApp (crítico)</text>
+<text x="1025.0" y="170" text-anchor="middle" font-size="12" fill="#334155">app (preventivo) · e-mail</text>
+<text x="1025.0" y="187" text-anchor="middle" font-size="12" fill="#334155">reenvio até 3×</text>
+<rect x="1145" y="105" width="165" height="110" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="1227.5" y="131" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">Produtor</text>
+<text x="1227.5" y="153" text-anchor="middle" font-size="12" fill="#334155">gerente agrícola</text>
+<text x="1227.5" y="170" text-anchor="middle" font-size="12" fill="#334155">agrônomo</text>
+<rect x="510" y="395" width="200" height="110" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="610.0" y="421" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">PostgreSQL</text>
+<text x="610.0" y="443" text-anchor="middle" font-size="12" fill="#334155">telemetria Silver · alertas</text>
+<text x="610.0" y="460" text-anchor="middle" font-size="12" fill="#334155">notificações · event log</text>
+<rect x="755" y="395" width="165" height="110" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="837.5" y="421" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">api</text>
+<text x="837.5" y="443" text-anchor="middle" font-size="12" fill="#334155">FastAPI</text>
+<text x="837.5" y="460" text-anchor="middle" font-size="12" fill="#334155">status · dados</text>
+<text x="837.5" y="477" text-anchor="middle" font-size="12" fill="#334155">event-log.csv</text>
+<rect x="955" y="395" width="170" height="110" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="1040.0" y="421" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">dashboard</text>
+<text x="1040.0" y="443" text-anchor="middle" font-size="12" fill="#334155">React (nginx sem root)</text>
+<text x="1040.0" y="460" text-anchor="middle" font-size="12" fill="#334155">Campo IoT ao vivo</text>
+<text x="1040.0" y="477" text-anchor="middle" font-size="12" fill="#334155">análises Fases 2–4</text>
+<rect x="510" y="590" width="200" height="110" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="610.0" y="616" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">Prometheus</text>
+<text x="610.0" y="638" text-anchor="middle" font-size="12" fill="#334155">coleta /metrics a cada 5 s</text>
+<text x="610.0" y="655" text-anchor="middle" font-size="12" fill="#334155">regras de alerta</text>
+<text x="610.0" y="672" text-anchor="middle" font-size="12" fill="#334155">operacional</text>
+<rect x="755" y="590" width="165" height="110" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="837.5" y="616" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">Grafana</text>
+<text x="837.5" y="638" text-anchor="middle" font-size="12" fill="#334155">painel de operação</text>
+<text x="837.5" y="655" text-anchor="middle" font-size="12" fill="#334155">provisionado</text>
+<rect x="955" y="590" width="170" height="110" rx="10" fill="#fae8ff" stroke="#a21caf" stroke-width="2"/>
+<text x="1040.0" y="616" text-anchor="middle" font-size="15" font-weight="800" fill="#0f172a">process-mining</text>
+<text x="1040.0" y="638" text-anchor="middle" font-size="12" fill="#334155">pm4py (sob demanda)</text>
+<text x="1040.0" y="655" text-anchor="middle" font-size="12" fill="#334155">DFG · BPMN · variantes</text>
+<text x="1040.0" y="672" text-anchor="middle" font-size="12" fill="#334155">gargalos</text>
+<path d="M245,170 L290,169" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<path d="M245,320 L290,319" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<path d="M465,169 L510,205" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<path d="M465,319 L510,285" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<path d="M710,175 L755,145" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<path d="M905,139 L935,150" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<path d="M1115,160 L1145,160" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+
+<path d="M580,345 L580,395" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<text x="588" y="375" font-size="11.5" fill="#334155" font-weight="600">grava</text>
+<path d="M1010,215 L1010,370 L660,370 L660,395" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<text x="790" y="363" font-size="11.5" fill="#334155" font-weight="600">notificações + eventos</text>
+<path d="M710,450 L755,450" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<path d="M920,450 L955,450" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<path d="M1125,450 L1228,450 L1228,215" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<text x="1236" y="350" font-size="11.5" fill="#334155" font-weight="600">painel</text>
+<path d="M838,505 L838,560 L1040,560 L1040,590" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<text x="880" y="553" font-size="11.5" fill="#334155" font-weight="600">event-log.csv</text>
+<path d="M710,645 L755,645" fill="none" stroke="#334155" stroke-width="2"  marker-end="url(#a)"/>
+<path d="M245,360 L264,360 L264,645 L510,645" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#g)"/>
+<text x="280" y="637" font-size="11.5" fill="#dc2626" font-weight="600">métricas /metrics de todos os serviços</text>
+<text x="40" y="722" font-size="11.5" fill="#475569">Linha cheia = fluxo de dados · linha tracejada = coleta de métricas · todos os serviços rodam sem root · senhas via .env</text>
+</svg>

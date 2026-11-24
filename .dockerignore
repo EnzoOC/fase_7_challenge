@@ -1,0 +1,13 @@
+**/.venv
+**/node_modules
+**/__pycache__
+**/dist
+**/.pytest_cache
+**/.ruff_cache
+.git
+.github
+docs
+evidencias
+process_mining/saida
+*.zip
+.env

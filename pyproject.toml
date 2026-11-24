@@ -1,0 +1,33 @@
+[project]
+name = "agrosmart"
+version = "7.0.0"
+description = "AgroSmart — plataforma de monitoramento agrícola inteligente (FIAP · Fase 7)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["services/comum", "services/motor"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["services/dashboard"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+ignore = ["S101", "S311", "E501"]   # assert em testes; random não-criptográfico na simulação
+
+[tool.ruff.lint.isort]
+known-first-party = ["config", "logs", "db", "kafka_util", "regras", "regras_iot", "processamento", "agregacao"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S"]
+
+[tool.bandit]
+exclude_dirs = ["tests", "services/dashboard", ".venv"]
+skips = ["B311", "B101"]
+
+[tool.coverage.run]
+source = ["services/motor", "services/comum"]
+omit = ["services/*/main.py", "services/comum/db.py", "services/comum/kafka_util.py"]

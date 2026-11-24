@@ -1,0 +1,16 @@
+{
+    "status": "operacional",
+    "etapas": {
+        "ingestao_iot_motor": "ok",
+        "regras_r1_r6": "ok",
+        "notificador": "ok"
+    },
+    "dispositivos_ativos": 5,
+    "leituras_ultimo_min": 99,
+    "rejeitadas_10min": 27,
+    "idade_seg": {
+        "idade_telemetria": 1.9,
+        "idade_ciclo": 0.7,
+        "idade_notificacao": 6.8
+    }
+}

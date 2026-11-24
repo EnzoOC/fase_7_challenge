@@ -1,0 +1,10 @@
+agrosmart-api 49MB / 16.42GB 2.01%
+agrosmart-broker 403.2MB / 16.42GB 17.64%
+agrosmart-dashboard 10.71MB / 16.42GB 0.00%
+agrosmart-grafana 80.96MB / 16.42GB 0.72%
+agrosmart-ingestao-iot 23.95MB / 16.42GB 0.19%
+agrosmart-ingestao-visao 24.44MB / 16.42GB 0.19%
+agrosmart-motor 26.88MB / 16.42GB 0.73%
+agrosmart-notificador 26.44MB / 16.42GB 0.28%
+agrosmart-postgres 43.33MB / 16.42GB 1.66%
+agrosmart-prometheus 47.12MB / 16.42GB 0.55%

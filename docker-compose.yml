@@ -1,0 +1,195 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# AgroSmart · Fase 7 — Plataforma completa containerizada
+#
+#  ENTRADA                PROCESSAMENTO                    SAÍDA
+#  ingestao-iot  ─┐                                  ┌─▶ notificador (WhatsApp/app/e-mail)
+#                 ├─▶ Kafka ─▶ motor (R1..R7) ─▶ Kafka┘
+#  ingestao-visao ┘               │
+#                                 ▼
+#                             PostgreSQL ─▶ api (FastAPI) ─▶ dashboard (React)
+#
+#  OBSERVABILIDADE: prometheus (coleta métricas de todos) ─▶ grafana (painéis)
+#
+#  Subir:      docker compose up -d --build      (ou: podman-compose up -d --build)
+#  Dashboard:  http://localhost:8080
+#  API/docs:   http://localhost:8000/docs
+#  Grafana:    http://localhost:3000   (usuário/senha no .env)
+#  Prometheus: http://localhost:9090
+#  Análise de processo (sob demanda):
+#              docker compose --profile analise run --rm process-mining
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: agrosmart
+
+x-python: &python-service
+  restart: unless-stopped
+  environment: &python-env
+    KAFKA_BOOTSTRAP: broker:9092
+    PGHOST: postgres
+    PGPORT: "5432"
+    PGDATABASE: ${POSTGRES_DB:-agrosmart}
+    PGUSER: ${POSTGRES_USER:-agrosmart}
+    PGPASSWORD: ${POSTGRES_PASSWORD:-agrosmart_dev}
+    LOG_LEVEL: ${LOG_LEVEL:-INFO}
+
+services:
+
+  # ── Infraestrutura ─────────────────────────────────────────────────────────
+  broker:
+    image: docker.io/apache/kafka:3.9.0
+    container_name: agrosmart-broker
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@broker:29093
+      KAFKA_LISTENERS: PLAINTEXT://broker:9092,CONTROLLER://broker:29093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LOG_RETENTION_HOURS: 24
+      KAFKA_HEAP_OPTS: "-Xmx384m -Xms384m"     # mantém o consumo de RAM baixo
+      CLUSTER_ID: agrosmart-kraft-cluster-0007
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-broker-api-versions.sh --bootstrap-server broker:9092 > /dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 15
+      start_period: 20s
+    restart: unless-stopped
+
+  postgres:
+    image: docker.io/library/postgres:16-alpine
+    container_name: agrosmart-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-agrosmart}
+      POSTGRES_USER: ${POSTGRES_USER:-agrosmart}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-agrosmart_dev}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+    restart: unless-stopped
+
+  # ── Entrada ────────────────────────────────────────────────────────────────
+  ingestao-iot:
+    <<: *python-service
+    build: { context: ., dockerfile: services/Dockerfile.python, args: { SERVICO: ingestao_iot } }
+    image: localhost/agrosmart-ingestao-iot:latest
+    container_name: agrosmart-ingestao-iot
+    environment:
+      <<: *python-env
+      INTERVALO_IOT_SEG: ${INTERVALO_IOT_SEG:-3}
+    depends_on: { broker: { condition: service_healthy } }
+
+  ingestao-visao:
+    <<: *python-service
+    build: { context: ., dockerfile: services/Dockerfile.python, args: { SERVICO: ingestao_visao } }
+    image: localhost/agrosmart-ingestao-visao:latest
+    container_name: agrosmart-ingestao-visao
+    environment:
+      <<: *python-env
+      INTERVALO_VISAO_SEG: ${INTERVALO_VISAO_SEG:-2}
+    depends_on: { broker: { condition: service_healthy } }
+
+  # ── Processamento e automação ──────────────────────────────────────────────
+  motor:
+    <<: *python-service
+    build: { context: ., dockerfile: services/Dockerfile.python, args: { SERVICO: motor } }
+    image: localhost/agrosmart-motor:latest
+    container_name: agrosmart-motor
+    environment:
+      <<: *python-env
+      JANELA: "500"
+      AVALIAR_SEG: "5"
+      COOLDOWN_ALERTA_SEG: ${COOLDOWN_ALERTA_SEG:-60}
+    depends_on:
+      broker: { condition: service_healthy }
+      postgres: { condition: service_healthy }
+
+  # ── Saída ──────────────────────────────────────────────────────────────────
+  notificador:
+    <<: *python-service
+    build: { context: ., dockerfile: services/Dockerfile.python, args: { SERVICO: notificador } }
+    image: localhost/agrosmart-notificador:latest
+    container_name: agrosmart-notificador
+    depends_on:
+      broker: { condition: service_healthy }
+      postgres: { condition: service_healthy }
+
+  api:
+    <<: *python-service
+    build: { context: ., dockerfile: services/Dockerfile.python, args: { SERVICO: api } }
+    image: localhost/agrosmart-api:latest
+    container_name: agrosmart-api
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--no-access-log"]
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/api/health',timeout=3).status==200 else 1)"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    depends_on: { postgres: { condition: service_healthy } }
+
+  dashboard:
+    build: { context: ./services/dashboard }
+    image: localhost/agrosmart-dashboard:latest
+    container_name: agrosmart-dashboard
+    ports: ["8080:8080"]
+    depends_on: [api]
+    restart: unless-stopped
+
+  # ── Observabilidade ────────────────────────────────────────────────────────
+  prometheus:
+    image: docker.io/prom/prometheus:v2.55.1
+    container_name: agrosmart-prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.retention.time=2d
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro,z
+      - ./monitoring/prometheus/alertas.yml:/etc/prometheus/alertas.yml:ro,z
+    ports: ["9090:9090"]
+    restart: unless-stopped
+
+  grafana:
+    image: docker.io/grafana/grafana:11.3.0
+    container_name: agrosmart-grafana
+    environment:
+      GF_SECURITY_ADMIN_USER: ${GRAFANA_USER:-admin}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-agrosmart_dev}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_ANALYTICS_REPORTING_ENABLED: "false"
+      GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH: /var/lib/grafana/dashboards/agrosmart.json
+    volumes:
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro,z
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro,z
+    ports: ["3000:3000"]
+    depends_on: [prometheus]
+    restart: unless-stopped
+
+  # ── Análise de processo (sob demanda) ──────────────────────────────────────
+  process-mining:
+    profiles: ["analise"]
+    build: { context: ./process_mining }
+    image: localhost/agrosmart-process-mining:latest
+    container_name: agrosmart-process-mining
+    # Ferramenta de análise executada sob demanda: roda como root apenas para
+    # poder gravar os resultados na pasta montada do host (rootless/SELinux).
+    user: "0:0"
+    environment:
+      EVENT_LOG_URL: http://api:8000/api/event-log.csv
+    volumes:
+      - ./process_mining/saida:/saida:z
+    depends_on: [api]
+
+volumes:
+  pgdata:

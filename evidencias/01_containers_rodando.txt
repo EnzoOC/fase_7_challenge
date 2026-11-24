@@ -1,0 +1,11 @@
+NAMES                     IMAGE                                      STATUS                   PORTS
+agrosmart-broker          docker.io/apache/kafka:3.9.0               Up 14 minutes (healthy)  9092/tcp
+agrosmart-postgres        docker.io/library/postgres:16-alpine       Up 14 minutes (healthy)  5432/tcp
+agrosmart-prometheus      docker.io/prom/prometheus:v2.55.1          Up 14 minutes            0.0.0.0:9090->9090/tcp
+agrosmart-ingestao-iot    localhost/agrosmart-ingestao-iot:latest    Up 14 minutes            
+agrosmart-ingestao-visao  localhost/agrosmart-ingestao-visao:latest  Up 14 minutes            
+agrosmart-api             localhost/agrosmart-api:latest             Up 14 minutes (healthy)  0.0.0.0:8000->8000/tcp
+agrosmart-grafana         docker.io/grafana/grafana:11.3.0           Up 14 minutes            0.0.0.0:3000->3000/tcp
+agrosmart-motor           localhost/agrosmart-motor:latest           Up 14 minutes            
+agrosmart-notificador     localhost/agrosmart-notificador:latest     Up 14 minutes            
+agrosmart-dashboard       localhost/agrosmart-dashboard:latest       Up 14 minutes            0.0.0.0:8080->8080/tcp
