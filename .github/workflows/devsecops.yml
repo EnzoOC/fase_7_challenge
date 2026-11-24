@@ -21,6 +21,10 @@ permissions:
   contents: read
   security-events: write   # publicar resultados na aba Security (SARIF)
 
+env:
+  # Trivy executado direto pela imagem oficial (versão fixada), sem depender de action de terceiros
+  TRIVY_IMAGE: docker.io/aquasec/trivy:0.57.1
+
 concurrency:
   group: devsecops-${{ github.ref }}
   cancel-in-progress: true
@@ -111,13 +115,10 @@ jobs:
           docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:v8.21.2 \
             detect --source /repo --redact --verbose --report-path /repo/gitleaks.json
 
-      - name: Configuração de infraestrutura — Dockerfile/compose (trivy config)
-        uses: aquasecurity/trivy-action@0.28.0
-        with:
-          scan-type: config
-          scan-ref: .
-          severity: HIGH,CRITICAL
-          exit-code: "1"
+      - name: Configuração de infraestrutura — Dockerfiles (trivy config)
+        run: |
+          docker run --rm -v "$PWD:/repo" ${{ env.TRIVY_IMAGE }} \
+            config --severity HIGH,CRITICAL --exit-code 1 /repo
 
       - name: Publicar SAST na aba Security
         if: always() && github.event_name != 'pull_request'
@@ -148,23 +149,17 @@ jobs:
           fi
 
       - name: Varredura de vulnerabilidades (trivy) — relatório
-        uses: aquasecurity/trivy-action@0.28.0
-        with:
-          image-ref: agrosmart-${{ matrix.servico }}:${{ github.sha }}
-          format: table
-          severity: MEDIUM,HIGH,CRITICAL
-          ignore-unfixed: true
-          exit-code: "0"
+        run: |
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v "$PWD:/repo" -w /repo \
+            ${{ env.TRIVY_IMAGE }} image --severity MEDIUM,HIGH,CRITICAL --ignore-unfixed \
+            --ignorefile /repo/.trivyignore --exit-code 0 agrosmart-${{ matrix.servico }}:${{ github.sha }}
 
       - name: Gate de segurança — falha se houver CRITICAL com correção disponível
-        uses: aquasecurity/trivy-action@0.28.0
-        with:
-          image-ref: agrosmart-${{ matrix.servico }}:${{ github.sha }}
-          format: sarif
-          output: trivy-${{ matrix.servico }}.sarif
-          severity: CRITICAL
-          ignore-unfixed: true
-          exit-code: "1"
+        run: |
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v "$PWD:/repo" -w /repo \
+            ${{ env.TRIVY_IMAGE }} image --severity CRITICAL --ignore-unfixed \
+            --ignorefile /repo/.trivyignore --format sarif --output /repo/trivy-${{ matrix.servico }}.sarif \
+            --exit-code 1 agrosmart-${{ matrix.servico }}:${{ github.sha }}
 
       - name: Publicar varredura na aba Security
         if: always() && github.event_name != 'pull_request'
