@@ -67,7 +67,7 @@ Os resultados do **bandit** e do **trivy** também são publicados na aba **Secu
 
 ## 3.4 Problemas reais que o pipeline encontrou (e como foram corrigidos)
 
-A primeira varredura local, antes do primeiro push, já encontrou problemas reais. É exatamente
+A primeira varredura local, antes do primeiro push, já encontrou problemas reais. No GitHub, a primeira execução também falhou: a versão `0.28.0` da `aquasecurity/trivy-action` não existia mais. A correção foi rodar o Trivy direto pela imagem oficial, com versão fixada, sem depender de action de terceiros. É exatamente
 para isso que serve o *security gate*:
 
 | Achado | Ferramenta | Correção |
@@ -80,7 +80,7 @@ para isso que serve o *security gate*:
 
 ## 3.5 Evidência da execução
 
-- Link da execução no GitHub Actions: ver `ENTREGA_LINKS.txt`
+- Execução de referência (todos os jobs verdes): https://github.com/EnzoOC/fase_7_challenge/actions/runs/45508862424
 - Prints: `evidencias/04_pipeline_visao_geral.png`, `evidencias/05_pipeline_seguranca.png`,
   `evidencias/06_pipeline_integracao.png`
 - Artefatos baixáveis em cada execução: `relatorios-qualidade` (cobertura e testes) e

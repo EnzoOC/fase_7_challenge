@@ -14,10 +14,10 @@ Equipe:
 ------------------------------------------------------------------------------
 
 Repositório GitHub (código + documentação):
-  https://github.com/USUARIO/REPOSITORIO
+  https://github.com/EnzoOC/fase_7_challenge
 
 Pipeline DevSecOps — GitHub Actions (execução de referência, toda verde):
-  https://github.com/USUARIO/REPOSITORIO/actions/runs/NUMERO_DA_EXECUCAO
+  https://github.com/EnzoOC/fase_7_challenge/actions/runs/45508862424
 
 Vídeo final — demonstração, fluxo e análise de processo (5 a 8 min):
   https://youtu.be/XXXXXXXXXXX

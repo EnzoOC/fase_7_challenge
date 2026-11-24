@@ -1,5 +1,7 @@
 # 🌱 AgroSmart — Plataforma de Monitoramento Agrícola Inteligente
 
+[![DevSecOps](https://github.com/EnzoOC/fase_7_challenge/actions/workflows/devsecops.yml/badge.svg)](https://github.com/EnzoOC/fase_7_challenge/actions/workflows/devsecops.yml)
+
 **FIAP · Fase 7 — Entrega final do projeto (PBL)**
 
 O AgroSmart monitora a lavoura em tempo real e **decide sozinho** quando o produtor precisa agir.
