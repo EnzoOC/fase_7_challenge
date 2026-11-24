@@ -2,8 +2,6 @@
 
 > Base para os slides e para o vídeo pitch (até 5 min). Mantém a coerência com o
 > Business Model Canvas da Fase 4 e o modelo de negócio da Fase 5.
-> Os itens marcados com **[fonte]** devem ser completados pela equipe com um dado
-> público e citado (ex.: Embrapa, CONAB, IBGE) antes da apresentação.
 
 ## Frase de impacto
 
@@ -13,7 +11,13 @@
 ## 1. Problema resolvido
 
 - O produtor só descobre o **estresse hídrico** ou a **doença** quando a planta já mostra o
-  dano, e aí parte da produção já foi perdida. **[fonte: perdas anuais por pragas/doenças/seca no Brasil]**
+  dano, e aí parte da produção já foi perdida:
+  - **até 40%** da produção agrícola mundial se perde todo ano por pragas e doenças, um prejuízo
+    de mais de US$ 220 bilhões por ano [1];
+  - no Brasil, só os enfezamentos transmitidos pela **cigarrinha-do-milho** reduziram a produção
+    de milho em média **22,7% por safra** entre 2020 e 2024, cerca de **US$ 6,5 bilhões por ano** [2];
+  - na safra **2023/24**, a seca e o calor fizeram o país colher **cerca de 21 milhões de toneladas de grãos
+    a menos** que no ciclo anterior [3].
 - Os dados existem (sensores, imagens, clima), mas estão **espalhados** e **ninguém olha
   o painel o tempo todo**. Dashboard sem ação não salva safra.
 - Quando o alerta existe, ele chega **atrasado** (área sem sinal) ou **em excesso** (o produtor
@@ -95,7 +99,7 @@ e a análise de processo mostra onde melhorar.
 | # | Slide | Conteúdo | Tempo |
 |---|---|---|---|
 | 1 | Capa | AgroSmart + frase de impacto | 15 s |
-| 2 | Problema | 3 dores (descobre tarde · dado sem ação · alerta demais/atrasado) + 1 número **[fonte]** | 40 s |
+| 2 | Problema | 3 dores (descobre tarde · dado sem ação · alerta demais/atrasado) + dados da FAO e da Embrapa | 40 s |
 | 3 | Solução | Ouve → Entende → Age | 40 s |
 | 4 | Como funciona | Diagrama da arquitetura simplificado | 30 s |
 | 5 | Demonstração | Print do dashboard + caso T01 (8,5 s até o WhatsApp) | 40 s |
@@ -104,3 +108,13 @@ e a análise de processo mostra onde melhorar.
 | 8 | Proposta de valor e receita | Frase de valor + modelo por hectare | 30 s |
 | 9 | Confiabilidade | DevSecOps + monitoramento + process mining (1 número de cada) | 20 s |
 | 10 | Próximos passos + equipe | Roadmap + nomes | 20 s |
+
+## Fontes
+
+1. FAO — Plant Production and Protection. https://www.fao.org/plant-production-protection/about/en
+2. Embrapa, Epagri e CNA (2026), estudo publicado na revista *Crop Protection*,
+   DOI [10.1016/j.cropro.2026.107549](https://doi.org/10.1016/j.cropro.2026.107549). Divulgação:
+   [Agência Brasil](https://agenciabrasil.ebc.com.br/en/economia/noticia/2026-04/corn-leafhopper-pest-costs-brazil-usd-65b-annual-farm-losses)
+   e [Revista Cultivar](https://revistacultivar.com.br/noticias/cigarrinha-gera-perdas-de-usdollar-25-8-bi-ao-milho-brasileiro).
+3. Conab — levantamentos da safra de grãos 2023/24 (agosto e setembro de 2024). Divulgação:
+   [Agência Brasil](https://agenciabrasil.ebc.com.br/economia/noticia/2024-09/clima-adverso-reduz-em-%20214-milhoes-de-toneladas-a-safra-de-graos).
