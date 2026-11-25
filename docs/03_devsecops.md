@@ -80,7 +80,7 @@ para isso que serve o *security gate*:
 
 ## 3.5 Evidência da execução
 
-- Execução de referência (todos os jobs verdes): https://github.com/EnzoOC/fase_7_challenge/actions/runs/45508862424
+- Execução de referência (todos os jobs verdes): https://github.com/EnzoOC/fase_7_challenge/actions/runs/45526672436
 - Prints: `evidencias/04_pipeline_visao_geral.png` (jobs), `evidencias/04b_pipeline_artefatos.png`
   (artefatos gerados), `evidencias/05_pipeline_seguranca.png` (job de segurança) e
   `evidencias/06_pipeline_integracao.png` (teste ponta a ponta)
