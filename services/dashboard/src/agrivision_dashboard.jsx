@@ -394,7 +394,7 @@ export default function AgriVisionDashboard() {
 
         {/* ── TAB: OVERVIEW ── */}
         {tab==="overview" && <>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(190px,1fr))",
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(190px,1fr))",
             gap:16, marginBottom:28 }}>
             {[
               {icon:"🖼️", label:"Imagens Analisadas", value:total,        color:C.blue,   sub:`de ${ALL_RECORDS.length} total`},
@@ -525,7 +525,7 @@ export default function AgriVisionDashboard() {
               </ResponsiveContainer>
             </div>
           </div>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(190px,1fr))", gap:14 }}>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(190px,1fr))", gap:14 }}>
             {diseaseData.map(d=>{
               const pct=total?Math.round(d.value/total*100):0;
               return (
@@ -684,7 +684,7 @@ python motor_regras.py
 
             {/* KPIs da automação */}
             <div style={{ display:"grid",
-              gridTemplateColumns:"repeat(auto-fill,minmax(170px,1fr))",
+              gridTemplateColumns:"repeat(auto-fit,minmax(170px,1fr))",
               gap:14, marginBottom:24 }}>
               <KpiCard icon="📋" label="Total de Alertas"
                 value={alertasData.total_alertas} color={C.blue}
@@ -766,7 +766,7 @@ python motor_regras.py
               borderRadius:16, padding:24 }}>
               <SectionTitle>Ações Automáticas Executadas</SectionTitle>
               <div style={{ display:"grid",
-                gridTemplateColumns:"repeat(auto-fill,minmax(220px,1fr))", gap:12 }}>
+                gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))", gap:12 }}>
                 {[
                   { icon:"📄", titulo:"Arquivos .json/.txt",
                     detalhe:`${alertasData.total_alertas * 2} arquivos individuais em fase3/output/alertas/` },
@@ -831,7 +831,7 @@ python motor_regras.py
 
           <div style={{ background:C.card, border:`1px solid ${C.border}`, borderRadius:16, padding:24 }}>
             <SectionTitle>💡 Recomendações ao Agricultor</SectionTitle>
-            <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(250px,1fr))", gap:14 }}>
+            <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))", gap:14 }}>
               {regionData.filter(r=>r.total>0).map(r=>{
                 const rate=Math.round(r.doente/r.total*100);
                 const urgent=rate>50, warn=rate>30;

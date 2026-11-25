@@ -110,7 +110,7 @@ export default function CampoIoT() {
       </div>
 
       {stats && (
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(160px,1fr))", gap:12, marginTop:14 }}>
+        <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(160px,1fr))", gap:12, marginTop:14 }}>
           {[
             ["Leituras processadas", stats.total_leituras, C.blue],
             ["Rejeitadas (dado inválido)", stats.leituras_rejeitadas, C.gold],
@@ -129,7 +129,7 @@ export default function CampoIoT() {
       )}
 
       <Titulo>📡 Talhões — última leitura</Titulo>
-      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(220px,1fr))", gap:14 }}>
+      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))", gap:14 }}>
         {(tele?.ultimas ?? []).map(u => {
           const cor = STATUS_COR[u.status_solo] ?? C.textDim;
           return (
