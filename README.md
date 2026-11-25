@@ -93,4 +93,3 @@ bandit -c pyproject.toml -r services   # segurança do código
 | 4. Monitoramento | [docs/04_monitoramento.md](docs/04_monitoramento.md) |
 | 5. Análise de processo | [docs/05_analise_processo.md](docs/05_analise_processo.md) |
 | 6. Produto (pitch) | [docs/06_produto_pitch.md](docs/06_produto_pitch.md) |
-| Roteiros dos vídeos | [docs/07_roteiros_videos.md](docs/07_roteiros_videos.md) |

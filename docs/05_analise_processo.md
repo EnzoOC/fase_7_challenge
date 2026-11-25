@@ -137,6 +137,6 @@ apareceu: não houve alerta sem validação nem notificação sem alerta. Isso c
 
 ## 5.7 Demonstração final da plataforma
 
-O vídeo final (5 a 8 min) segue o roteiro em [`07_roteiros_videos.md`](07_roteiros_videos.md):
-arquitetura → `docker compose up` → dashboard ao vivo → caso real de alerta crítico → Grafana →
-mineração de processos → pipeline DevSecOps. O link está em `ENTREGA_LINKS.txt`.
+O vídeo final (5 a 8 min) percorre: arquitetura → `docker compose up` → dashboard ao vivo →
+caso real de alerta crítico → Grafana → mineração de processos → pipeline DevSecOps.
+O link está em `ENTREGA_LINKS.txt`.

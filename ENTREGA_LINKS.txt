@@ -14,14 +14,14 @@ Repositório GitHub (código + documentação):
 Pipeline DevSecOps — GitHub Actions (execução de referência, toda verde):
   https://github.com/EnzoOC/fase_7_challenge/actions/runs/45508862424
 
-Vídeo final — demonstração, fluxo e análise de processo (5 a 8 min):
+Vídeo final — demonstração, fluxo e análise de processo:
   https://youtu.be/Qvcmma2BCZg
 
-Vídeo pitch — apresentação do produto (até 5 min):
-  https://youtu.be/XXXXXXXXXXX
+Vídeo pitch — apresentação do produto:
+  https://youtu.be/jFIKdNysRyI
 
 Slides do pitch:
-  incluídos no zip em  docs/AgroSmart_Pitch.pdf  (e .pptx)
+  docs/AgroSmart_Pitch.pdf (no zip e no repositório)
 
 ------------------------------------------------------------------------------
  ONDE ESTÁ CADA REQUISITO (dentro do zip / repositório)
