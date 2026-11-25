@@ -2,12 +2,7 @@
  AgroSmart — FIAP · Fase 7 (entrega final)
 ==============================================================================
 
-Equipe:
-  - Nome Completo 1 — RM ______
-  - Nome Completo 2 — RM ______
-  - Nome Completo 3 — RM ______
-  - Nome Completo 4 — RM ______
-  - Nome Completo 5 — RM ______
+Grupo: conforme cadastro no portal da FIAP.
 
 ------------------------------------------------------------------------------
  LINKS

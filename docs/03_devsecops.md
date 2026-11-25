@@ -81,8 +81,9 @@ para isso que serve o *security gate*:
 ## 3.5 Evidência da execução
 
 - Execução de referência (todos os jobs verdes): https://github.com/EnzoOC/fase_7_challenge/actions/runs/45508862424
-- Prints: `evidencias/04_pipeline_visao_geral.png`, `evidencias/05_pipeline_seguranca.png`,
-  `evidencias/06_pipeline_integracao.png`
+- Prints: `evidencias/04_pipeline_visao_geral.png` (jobs), `evidencias/04b_pipeline_artefatos.png`
+  (artefatos gerados), `evidencias/05_pipeline_seguranca.png` (job de segurança) e
+  `evidencias/06_pipeline_integracao.png` (teste ponta a ponta)
 - Artefatos baixáveis em cada execução: `relatorios-qualidade` (cobertura e testes) e
   `evidencias-execucao` (logs dos serviços, status, event log e relatório de processo)
 
